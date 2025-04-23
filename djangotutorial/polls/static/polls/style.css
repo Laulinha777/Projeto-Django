@@ -1,0 +1,102 @@
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.playwrite{
+    font-family: "Playwrite AU SA", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centraliza horizontalmente */
+    justify-content: center;  /* Centraliza verticalmente */
+    height: 100vh;  /* A altura da página será 100% da altura da janela */
+    margin: 0;
+    text-align: center;  /* Centraliza o texto */
+    background-color: rgb(213, 213, 243); /* Cor de fundo suave */
+}
+
+/* Estilo para o título */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif; 
+    text-shadow: 2px 0px 2px rgb(212, 187, 221);
+}
+
+/* Estilo para a lista de enquetes */
+ul {
+    padding: 0;
+    margin-top: 60px;
+}
+
+ul li {
+    margin: 10px;
+    font-size: 15px;
+    list-style-type: none;
+    margin-top: 40px;
+
+}
+
+/* Estilo para os links */
+a {     
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover {
+    color:rgb(213, 213, 243); 
+}
+
+/* Estilo para a mensagem quando não há enquetes */
+p {
+    font-size: 18px;
+    color: #666;
+}
+
+.container{
+background-color: rgb(255, 255, 255);
+width: 700px;
+height: 400px;
+border-radius: 10px;
+box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.flex{
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 0.9rem; /* Ajusta o tamanho da fonte para dispositivos móveis */
+        padding: 10px; /* Adiciona um pequeno espaçamento nas laterais */
+    }
+
+    h1 {
+        font-size: 1.6rem; /* Diminui o tamanho do título */
+        margin-bottom: 15px; /* Reduz a margem do título */
+    }
+
+    ul {
+        margin-top: 30px; /* Diminui o espaço acima da lista */
+    }
+
+    ul li {
+        font-size: 14px; /* Reduz o tamanho da fonte nas opções */
+        margin-top: 20px; /* Reduz o espaço entre as opções */
+    }
+
+    .container {
+        width: 90%; /* O container ocupa 90% da tela */
+        height: auto; /* Altura flexível para caber bem na tela */
+        padding: 20px; /* Adiciona espaçamento interno */
+    }
+}

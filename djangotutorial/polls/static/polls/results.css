@@ -1,0 +1,86 @@
+/* Resetando algumas margens e estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo o estilo do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(213, 213, 243);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Estilizando o título da pergunta */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilizando a lista de opções */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+
+li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #dbd8d8;
+}
+
+/* Estilizando o link de "Votar novamente" */
+a {
+    display: block;
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 200px;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 0.9rem; /* Reduzindo a fonte para telas menores */
+    }
+
+    h1 {
+        font-size: 1.6rem; /* Ajustando o título para telas pequenas */
+    }
+
+    ul {
+        padding-left: 10px; /* Ajustando o padding da lista para tela pequena */
+    }
+
+    li {
+        font-size: 1rem; /* Ajustando o tamanho da fonte nas opções */
+        padding: 12px; /* Menos padding para economizar espaço */
+    }
+
+    a {
+        width: 100%; /* O link ocupa a largura total em dispositivos móveis */
+        padding: 14px 0; /* Maior altura para o botão */
+    }
+}

@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: black;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(213, 213, 243);
     margin: 0;
     padding: 0;
     display: flex;
@@ -12,10 +12,10 @@ body {
 }
 
 form {
-    background-color:rgb(232, 140, 140) ;
+    background-color: whitesmoke;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 500px;
 }
@@ -60,4 +60,28 @@ input[type="submit"]:hover {
 p {
     color: red;
     font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Adiciona um pequeno espaçamento nas laterais */
+    }
+
+    h1 {
+        font-size: 20px; /* Ajusta o tamanho do título */
+    }
+
+    form {
+        padding: 20px; /* Reduz o padding do formulário para caber melhor */
+        width: 100%; /* O formulário ocupa 100% da largura da tela */
+    }
+
+    label {
+        font-size: 16px; /* Reduz o tamanho da fonte para dispositivos móveis */
+    }
+
+    input[type="submit"] {
+        font-size: 14px; /* Reduz o tamanho da fonte do botão */
+        padding: 12px 20px; /* Ajusta o padding para um botão mais acessível */
+    }
 }
