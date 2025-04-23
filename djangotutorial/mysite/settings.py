@@ -56,7 +56,7 @@ MIDDLEWARE = [
 ]
 
 if not "test" in sys.argv:
-    MIDDLEWARE.insert(0, "debug_toolbar.middleware.DebugToolbarMiddleware")
+   pass
 
 ROOT_URLCONF = 'mysite.urls'
 
